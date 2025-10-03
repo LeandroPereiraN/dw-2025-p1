@@ -29,6 +29,13 @@ export const UcuYaExisteUsuario = createError(
   Error
 );
 
+export const UcuNotOwnerTask = createError(
+  "UCU_0006",
+  "No sos el dueño de la tarea: %s",
+  403,
+  Error
+);
+
 export default {
   UcuError,
   UcuNoAutenticado,

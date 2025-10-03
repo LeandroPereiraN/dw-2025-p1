@@ -15,6 +15,9 @@ const personasRoutes: FastifyPluginAsyncTypebox = async function (fastify) {
         response: {
           200: Type.Array(Persona),
         },
+        security: [
+          { bearerAuth: [] }
+        ]
       },
       onRequest: [fastify.checkIsAdmin],
     },
@@ -40,6 +43,9 @@ const personasRoutes: FastifyPluginAsyncTypebox = async function (fastify) {
           201: Persona,
           400: ErrorSchema,
         },
+        security: [
+          { bearerAuth: [] }
+        ]
       },
       onRequest: [fastify.checkIsAdmin],
     },
