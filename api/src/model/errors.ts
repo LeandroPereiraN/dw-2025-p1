@@ -44,7 +44,7 @@ export default {
 
 export const UcuDatosIncorrectos = createError(
   "UCU_0006",
-  "Usuario o contraseña incortecta. %s",
+  "Usuario o contraseña incorrecta. %s",
   401,
   Error
 );

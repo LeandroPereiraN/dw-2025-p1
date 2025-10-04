@@ -7,3 +7,4 @@ export const menuListaUsuariosElement = document.getElementById(
 export const menuCrearUsuarioElement =
   document.getElementById("menu-crear-usuario");
 export const menuMisTareasElement = document.getElementById("menu-mis-tareas");
+export const menuCerrarSesion = document.getElementById("menu-cerrar-sesion");
