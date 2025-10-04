@@ -71,7 +71,7 @@ export async function mostrarCrearUsuario() {
 
           <input type="submit" value="Ingresar"/>
         </form>
-        <div id="error-login" class="error-message"></div>
+        <div id="error-create-user" class="error-message"></div>
 
       </div>
     `;
@@ -93,8 +93,6 @@ async function doCreateUser(event) {
   const username = document.getElementById("username").value;
   const isAdminChecked = document.getElementById("admin").checked;
   const isNormalChecked = document.getElementById("normal").checked;
-
-  console.log({ username, isAdminChecked, isNormalChecked })
 
   const roles = []
   if (isAdminChecked) roles.push("admin")
