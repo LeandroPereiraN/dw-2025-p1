@@ -9,7 +9,6 @@ menuCrearUsuarioElement.addEventListener("click", (event) => {
   mostrarCrearUsuario(event);
 });
 
-
 export async function mostrarListarUsuarios() {
   try {
     headerTitleElement.innerHTML = `<h2>Listar usuarios</h2>`;
@@ -69,7 +68,7 @@ export async function mostrarCrearUsuario() {
           <input type="checkbox" id="normal" name="normal">
           <label for="normal">Normal</label><br>
 
-          <input type="submit" value="Ingresar"/>
+          <input type="submit" value="Crear"/>
         </form>
         <div id="error-create-user" class="error-message"></div>
 
